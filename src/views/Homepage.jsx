@@ -1,15 +1,18 @@
 import React from "react";
 import styles from "./Homepage.module.css";
 
-const Homepage = () => {return (
-  <section className={styles.splashImage}>
-    <div className={styles.overlay}>
-      <div className={styles.div}>
-        <h1 className={styles.title}>Base 3R4</h1>
-        <p className={styles.description}>The future of recycling on another world</p>
-      </div>
-    </div>
-  </section>
-)};
+import SplashImage from "../components/splashImage/SplashImage";
+import OurMission from "../components/ourMission/OurMission";
+import OurDesign from "../components/ourDesign/OurDesign";
+
+const Homepage = () => {
+  return (
+    <>
+      <SplashImage />
+      <OurMission />
+      <OurDesign />
+    </>
+  );
+};
 
 export default Homepage;
