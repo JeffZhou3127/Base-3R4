@@ -27,14 +27,16 @@
 	color: red;
 	font-family: "Roboto Mono", "Lucida Console", "Monaco", monospace;
 	font-weight: bold;
-	position: relative;
-	left: 5px;
-	bottom: 20px;
+	font-size: 15px;
+	position: absolute;
+	left: 62.5px;
+	top: 20px;
 }
 
 .evolutionizers {
-	position: relative;
-	right: 65px;
+	position: absolute;
+	top: 37px;
+	left: 57.5px;
 	font-size: 20px;
 	font-style: italic;
 	font-weight: 600;
@@ -67,6 +69,7 @@
 
 .ul li+li::before {
 	content: "|";
+	font-size: 15px;
 }
 
 /* Main */
@@ -85,4 +88,21 @@
 
 .footer h2 {
 	font-size: 20px;
+	margin-right: 25px;
+}
+
+.footer p {
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.footer h2 {
+		display: none;
+	}
 }

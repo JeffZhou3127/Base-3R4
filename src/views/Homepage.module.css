@@ -1,23 +1,29 @@
-.SplashImage{
+.splashImage {
   background-image: url("../assets/Team_Photo_Render.png");
-  background-size:contain;
   background-repeat: no-repeat;
-  height: 760px;
-  width:100%;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
-.Title {
+
+.div {
+  position: relative;
+  bottom: 75px;
+}
+
+.title {
   padding-top: 50px;
   font-size: 100px;
   color: rgb(255, 255, 255);
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
-.Des {
+
+.description {
   font-size: 25px;
   color:white;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -30,5 +36,25 @@
   align-items:center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: calc(240rem / 17);
+  }
+  
+  .description {
+    font-size: calc(60rem / 17);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 58.8235px;
+  }
+
+  .description {
+    font-size: 14.7059px;
+  }
 }

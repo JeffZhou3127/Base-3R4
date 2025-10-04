@@ -32,7 +32,7 @@ const AppLayout = () => {
         <Outlet />
         <footer className={styles.footer}>
           <h2>Project by Peiqi Zhou, Jiawei Li, Samuel Lin, Ada Lin</h2>
-          <p>&copy;Peiqi Zhou, 2025</p>
+          <p>&copy; Peiqi Zhou, 2025</p>
         </footer>
       </main>
     </>
