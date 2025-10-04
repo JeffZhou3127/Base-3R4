@@ -1,31 +1,108 @@
+* {
+	color: white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
 .header {
   background-color: black;
   position: fixed;
   z-index: 1;
   width: 100%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
 }
-.img {
-  height: 60px;
-  width: 60px;
-  transition: 0.75s;
+
+.capitalizedLetter {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 60px;
+	display: inline;
 }
-.img:hover {
-  transition: 0.75s;
-  opacity: 0.5;
+
+.martian {
+	color: red;
+	font-family: "Roboto Mono", "Lucida Console", "Monaco", monospace;
+	font-weight: bold;
+	font-size: 15px;
+	position: absolute;
+	left: 62.5px;
+	top: 20px;
 }
+
+.evolutionizers {
+	position: absolute;
+	top: 37px;
+	left: 57.5px;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 600;
+}
+
 .Link {
-  border-radius: 20;
-  height: 55px;
-  width: 70px;
-  transition: 0.75s;
+	text-decoration: none;
 }
-.Link:hover {
-  transition: 0.75s;
-  transform: scale(1.1);
+
+.ul li {
+	display: inline;
 }
-.Link:active {
-  transition: 0.75s;
-  color:blue;
+
+.ul li * {
+	display: inline-block;
+	padding: 20px;
+	font-size: 17.5px;
+	transition: 0.15s ease-in-out;
+}
+
+.ul li *:hover {
+	text-decoration-color: transparent;
+	transition: 0.15s ease-in-out;
+}
+
+.ul li *:active {
+	color: #DDD;
+	transition: color 0.15s ease-in-out;
+}
+
+.ul li+li::before {
+	content: "|";
+	font-size: 15px;
+}
+
+/* Main */
+.main {
+	position: relative;
+	top: 70px;
+}
+
+/* Footer */
+.footer {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.footer h2 {
+	font-size: 20px;
+	margin-right: 25px;
+}
+
+.footer p {
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.footer h2 {
+		display: none;
+	}
 }
