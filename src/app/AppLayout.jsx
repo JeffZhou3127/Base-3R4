@@ -28,10 +28,13 @@ const AppLayout = () => {
           </ul>
         </nav>
       </header>
-      <main>
+      <main className={styles.main}>
         <Outlet />
+        <footer className={styles.footer}>
+          <h2>Project by Peiqi Zhou, Jiawei Li, Samuel Lin, Ada Lin</h2>
+          <p>&copy;Peiqi Zhou, 2025</p>
+        </footer>
       </main>
-      <footer></footer>
     </>
   );
 };

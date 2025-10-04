@@ -1,13 +1,14 @@
 * {
 	color: white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
+/* Header */
 .header {
   background-color: black;
   position: fixed;
   z-index: 1;
   width: 100%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   height: 70px;
 	display: flex;
 	justify-content: space-between;
@@ -66,4 +67,22 @@
 
 .ul li+li::before {
 	content: "|";
+}
+
+/* Main */
+.main {
+	position: relative;
+	top: 70px;
+}
+
+/* Footer */
+.footer {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.footer h2 {
+	font-size: 20px;
 }
