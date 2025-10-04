@@ -1,0 +1,34 @@
+.SplashImage{
+  background-image: url("../assets/Team_Photo_Render.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 760px;
+  width:100%;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+.Title {
+  padding-top: 50px;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.Des {
+  font-size: 25px;
+  color:white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}

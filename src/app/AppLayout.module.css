@@ -1,31 +1,31 @@
 .header {
-    background-color: black;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    height: 70px;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  height: 70px;
 }
 .img {
-    height: 60px;
-    width: 60px;
-    transition: 0.75s;
+  height: 60px;
+  width: 60px;
+  transition: 0.75s;
 }
 .img:hover {
-    transition: 0.75s;
-    opacity: 0.5;
+  transition: 0.75s;
+  opacity: 0.5;
 }
 .Link {
-    border-radius: 20;
-    height: 55px;
-    width: 70px;
-    transition: 0.75s;
+  border-radius: 20;
+  height: 55px;
+  width: 70px;
+  transition: 0.75s;
 }
 .Link:hover {
-    transition: 0.75s;
-    transform: scale(1.1);
+  transition: 0.75s;
+  transform: scale(1.1);
 }
 .Link:active {
-    transition: 0.75s;
-    color:blue;
+  transition: 0.75s;
+  color:blue;
 }
