@@ -24,3 +24,6 @@ Our team used a series of different languages and libraries to make the creation
 We were split into two teams:
 1. Our coding and web developer team, Jeffery Zhou and Stephen Li, are responsible for the coding, front-end development, and styling to create this website.
 2. Our presentation and web content team, Samuel and Ada Lin, are responsible for how our project information is presented, meaning informational text in the website, videos, and even this README!
+
+## License
+&copy; Peiqi Zhou, 2025
