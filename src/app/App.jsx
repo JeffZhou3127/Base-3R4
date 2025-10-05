@@ -3,10 +3,12 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 
 import AppLayout from "./AppLayout";
 import Homepage from "../views/Homepage";
+import Solutions from "../views/Solutions";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<AppLayout />}>
     <Route index element={<Homepage />} />
+    <Route path=":solutionTitle" element={<Solutions />} />
   </Route>
 ));
 
