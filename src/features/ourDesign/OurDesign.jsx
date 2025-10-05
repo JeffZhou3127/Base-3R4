@@ -3,9 +3,12 @@ import { useSelector } from "react-redux";
 import { selectProblem } from "./problemsSlice";
 import styles from "./OurDesign.module.css";
 import Card from "../../components/cards/Card";
+import ROUTES from "../../app/routes";
 
 const OurDesign = () => {
   const problem = useSelector(selectProblem);
+  const { residenceRenovations, cosmicCelebrations, daringDiscoveries } = ROUTES;
+  const hrefs = [residenceRenovations, cosmicCelebrations, daringDiscoveries];
 
   return (
     <section id="design" className={styles.section}>
@@ -18,8 +21,8 @@ const OurDesign = () => {
         220 million miles away.
       </p>
       <div className={styles.container}>
-        {problem.map(({ num, name, description }) =>
-          <Card key={num} problemNum={num} problemName={name} problemDescription={description} />
+        {problem.map(({ num, name, description }, id) =>
+          <Card href={hrefs[id]} key={num} problemNum={num} problemName={name} problemDescription={description} />
         )}
       </div>
       <p className={styles.note}>Click on the cards to see our solution</p>
