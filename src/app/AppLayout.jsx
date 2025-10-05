@@ -1,10 +1,15 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import ROUTES from "./routes";
 import styles from "./AppLayout.module.css";
 
 const AppLayout = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(ROUTES.homepage);
+  };
+
   return (
     <>
       <header className={styles.header}>
@@ -17,13 +22,13 @@ const AppLayout = () => {
         <nav>
           <ul className={styles.ul}>
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={handleClick}>Home</a>
             </li>
             <li>
-              <a href="#mission">Mission</a>
+              <a href="#mission" onClick={handleClick}>Mission</a>
             </li>
             <li>
-              <a href="#design">Design</a>
+              <a href="#design" onClick={handleClick}>Design</a>
             </li>
           </ul>
         </nav>

@@ -59,6 +59,10 @@
     font-size: 21.68px;
   }
 
+  .h3 span {
+    display: none;
+  }
+
   .p {
     font-size: 16.26px;
   }

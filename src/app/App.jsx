@@ -2,11 +2,13 @@ import React from "react";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
 import AppLayout from "./AppLayout";
-import Homepage from "../views/Homepage";
+import Homepage from "../views/homepage/Homepage";
+import Solutions from "../views/solutions/Solutions";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<AppLayout />}>
     <Route index element={<Homepage />} />
+    <Route path=":solutionTitle" element={<Solutions />} />
   </Route>
 ));
 
