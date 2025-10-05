@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --card-height: 350px;
+}
+
 html {
   font-size: calc(5vw / 6);
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  :root {
+    --card-height: 250px;
+  }
 }

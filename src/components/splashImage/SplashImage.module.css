@@ -25,8 +25,9 @@
 
 .description {
   font-size: 25px;
-  color:white;
+  color: white;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 .overlay {

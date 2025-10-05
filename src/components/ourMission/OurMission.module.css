@@ -1,19 +1,21 @@
 .title {
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 40px;
   border-bottom: 1px solid white;
   width: 90%;
+  padding-bottom: 5px;
   margin-left: 5%;
 }
 
 .mission {
   background-color: black;
-  padding:10px;
+  padding: 3.90625%;
 }
 
 .text {
+  text-align: center;
   margin-top: 10px;
   font-size: 20px;
   line-height: 35px;

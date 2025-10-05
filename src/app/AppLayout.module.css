@@ -95,6 +95,16 @@
 	font-size: 15px;
 }
 
+.ul li a:hover {
+  transition: transform 0.5s;
+  transform: scale(1.025);
+}
+
+.ul li a:active {
+  transition: transform 0.5;
+  transform: scale(0.975);
+}
+
 @media only screen and (max-width: 600px) {
 	.header nav {
 		display: none;
@@ -105,18 +115,4 @@
 	.footer h2 {
 		display: none;
 	}
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a:hover {
-  transition: 0.5s;
-  transform: scale(1.025);
-}
-
-a:active {
-  transition: 0.5;
-  transform: scale(0.975);
 }
