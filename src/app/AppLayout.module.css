@@ -110,3 +110,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+a:hover {
+  transition: 0.5s;
+  transform: scale(1.025);
+}
+
+a:active {
+  transition: 0.5;
+  transform: scale(0.975);
+}
