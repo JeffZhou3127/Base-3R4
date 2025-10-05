@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --card-height: 350px;
+}
+
 html {
   font-size: calc(5vw / 6);
   scroll-behavior: smooth;

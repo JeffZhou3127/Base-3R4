@@ -1,6 +1,6 @@
 .section {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 40px;
 }
 
 .img {
@@ -22,46 +22,11 @@
 }
 
 /* CSS Grid */
-:root {
-  --card-height: 350px;
-}
-
 .container {
   display: grid;
   grid-template: var(--card-height) / repeat(3, 1fr);
   gap: 75px;
   padding: 40px 100px;
-}
-
-.cards {
-  background-color: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #1c1300;
-  height: var(--card-height);
-  transition:
-    height 0.15s ease-in,
-    box-shadow 0.15s ease-in,
-    background-color 0.15s ease-in-out,
-    transform 0.15s ease-in;
-}
-
-.cards:hover {
-  background-color: #DDD;
-}
-
-.cards:active {
-  transform: translateY(5px);
-  height: calc(var(--card-height) - 5px);
-  box-shadow: none;
-}
-
-.cards h3 {
-  font-size: 20px;
-  text-align: center;
-  border-bottom: 1px solid black;
-  padding: 5px;
-  margin-bottom: 15px;
 }
 
 .container * {
