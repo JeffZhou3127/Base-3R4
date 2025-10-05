@@ -17,13 +17,13 @@ const AppLayout = () => {
         <nav>
           <ul className={styles.ul}>
             <li>
-              <Link>Home</Link>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <Link>Mission</Link>
+              <a href="#mission">Mission</a>
             </li>
             <li>
-              <Link>Design</Link>
+              <a href="#design">Design</a>
             </li>
           </ul>
         </nav>
