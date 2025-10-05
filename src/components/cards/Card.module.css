@@ -1,6 +1,6 @@
-.cards {
+.card {
   background-color: white;
-  padding: 25px;
+  padding: 7.5%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #1c1300;
   height: var(--card-height);
@@ -11,18 +11,18 @@
     transform 0.15s ease-in;
 }
 
-.cards:hover {
+.card:hover {
   background-color: #DDD;
 }
 
-.cards:active {
+.card:active {
   transform: translateY(5px);
   height: calc(var(--card-height) - 5px);
   box-shadow: none;
 }
 
 .h3 {
-  font-size: 20px;
+  font-size: calc(20rem / 9);
   text-align: center;
   border-bottom: 1px solid black;
   padding: 5px;
@@ -32,4 +32,34 @@
 .p {
   font-size: 20px;
   padding: 5px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .p {
+    font-size: calc(16rem / 9);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .card {
+    padding: 2.5%;
+  }
+
+  .h3 {
+    font-size: 4rem;
+  }
+
+  .p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .h3 {
+    font-size: 21.68px;
+  }
+
+  .p {
+    font-size: 16.26px;
+  }
 }

@@ -13,7 +13,7 @@ const problem = [
     num: 2,
     name: "Cosmic Celebrations",
     description:
-      "Aluminum structures and the 3-dimensional structure used to inflate Martian habitats are difficult to recycle and reuse in their current form without melting, which is unfeasible on Mars because of its lack of oxygen.",
+      "Plastics like Ethylene-Vinyl Acetate (EVA) waste and Polymer Matrix Composites are difficult to break up and recycle because of their robust and reinforced molecular crosslinked systems.",
   },
   {
     num: 3,

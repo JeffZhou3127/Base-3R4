@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 
 const Card = ({ problemNum, problemName, problemDescription }) => {
   return (
-    <Link className={styles.cards}>
+    <Link className={styles.card}>
       <h3 className={styles.h3}>Problem {problemNum}<span>: {problemName}</span></h3>
       <p className={styles.p}>{problemDescription}</p>
     </Link>

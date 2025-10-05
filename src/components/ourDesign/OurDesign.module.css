@@ -1,6 +1,6 @@
 .section {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
+  padding: 3.90625%;
 }
 
 .img {
@@ -25,8 +25,8 @@
 .container {
   display: grid;
   grid-template: var(--card-height) / repeat(3, 1fr);
-  gap: 75px;
-  padding: 40px 100px;
+  gap: 3.90625%;
+  padding: 40px calc(125% / 24);
 }
 
 .container * {
@@ -37,4 +37,11 @@
 .note {
   font-size: 15px;
   text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    grid-template: repeat(3, var(--card-height)) / 1fr;
+    height: 900px;
+  }
 }
