@@ -4,6 +4,7 @@ import { selectProblem } from "./problemsSlice";
 import styles from "./OurDesign.module.css";
 import Card from "../../components/cards/Card";
 import ROUTES from "../../app/routes";
+import video from "../../assets/dual_use_system_animation.mp4";
 
 const OurDesign = () => {
   const problem = useSelector(selectProblem);
@@ -26,6 +27,19 @@ const OurDesign = () => {
         )}
       </div>
       <p className={styles.note}>Click on the cards to see our solution</p>
+      <section className={styles.animation}>
+        <h3>Animation</h3>
+        <p>Here's a quick blender animation of the dual system</p>
+        <video src={video} width="50%" controls>Video not supported</video>
+        <article>
+          <h4>Explanation</h4>
+          <p>
+            The pins holding the section that will be folded are pulled out. There is another pin preventing the structure
+            from folding. The slab holding the pin in place is released, and then the pin is pulled out. This way, the structure is
+            free to fold and form complex shapes (such as furniture).
+          </p>
+        </article>
+      </section>
     </section>
   );
 };
