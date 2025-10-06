@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Homepage.module.css";
 
 import SplashImage from "../../components/splashImage/SplashImage";
 import OurMission from "../../components/ourMission/OurMission";
