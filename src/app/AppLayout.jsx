@@ -16,7 +16,7 @@ const AppLayout = () => {
     <>
       <header className={styles.header}>
         {/* Spells out Martian Revolutionizers */}
-        <Link to={ROUTES.homepage} className={styles.Link}>
+        <Link aria-hidden="true" to={ROUTES.homepage} className={styles.Link}>
           <span className={styles.capitalizedLetter}>R</span>
           <span className={styles.martian}>Martian</span>
           <span className={styles.evolutionizers}>evolutionizers</span>
@@ -37,7 +37,7 @@ const AppLayout = () => {
       </header>
       <main className={styles.main}>
         <Outlet />
-        <footer className={styles.footer}>
+        <footer aria-hidden="true" className={styles.footer}>
           <h2>Project by Peiqi Zhou, Jiawei Li, Samuel Lin, Ada Lin</h2>
           <p>&copy; Peiqi Zhou, 2025</p>
         </footer>
