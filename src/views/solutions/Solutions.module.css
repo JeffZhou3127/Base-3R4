@@ -93,7 +93,7 @@
 
 .solutionsOverlay {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px 350px;
+  padding: 40px 25rem;
 }
 
 .solutionsOverlay * {
@@ -132,6 +132,7 @@
 }
 
 .backLink {
+  font-size: 15px;
   background-color: red;
   text-decoration: none;
   padding: 10px;
@@ -149,4 +150,10 @@
 .backLink:active {
   background-color: #D00;
   color: #DDD;
+}
+
+@media only screen and (max-width: 425px) {
+  .solutionsOverlay h2 {
+    font-size: calc(80rem / 7);
+  }
 }
