@@ -45,3 +45,52 @@
     height: 1025px;
   }
 }
+
+/* Animation */
+.animation {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation * {
+  margin: 10px;
+}
+
+.animation p {
+  font-size: 15px;
+}
+
+.animation h3 {
+  font-size: 30px;
+}
+
+.animation video {
+  width: 50%;
+}
+
+.animation article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation article h4 {
+  font-size: 25px;
+}
+
+.animation article {
+  width: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .animation video {
+    width: 251.567px;
+  }
+
+  .animation article {
+    width: 251.567px;
+  }
+}
