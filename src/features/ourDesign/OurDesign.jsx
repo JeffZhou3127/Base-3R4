@@ -30,7 +30,7 @@ const OurDesign = () => {
       <section className={styles.animation}>
         <h3>Animation</h3>
         <p>Here's a quick blender animation of the dual system</p>
-        <video src={video} width="50%" controls>Video not supported</video>
+        <video src={video} controls>Video not supported</video>
         <article>
           <h4>Explanation</h4>
           <p>
