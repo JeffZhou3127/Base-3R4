@@ -8,8 +8,8 @@ import styles from "./Solutions.module.css";
 const Solutions = () => {
   const solutions = useSelector(selectSolutions);
   const { solutionTitle } = useParams();
-  window.scroll(0, 0);
-  const solution = solutions.find(({ solutionName }) => solutionName === solutionTitle);
+
+  const solution = solutions[solutionTitle];
   if (!solution) {
     return (
       <section className={styles.errorSection}>
@@ -22,28 +22,21 @@ const Solutions = () => {
     );
   }
 
-  const getbenifits = (item) => {
-    console.log(item);
-    return "<p className={styles.text}>" + item + "</p>";
-  };
   return (
-    
     <section className={styles.solutions}>
-      <div className={styles.overlay}>
-        {/* Display all the data from solutions (check ./solutionsSlice for the object keys) */}
-        <h2 className={styles.title}>{solution.solutionName}</h2>
-        <p className={styles.text}>{solution.solutionDetails}</p>
-        <h2 className={styles.title}>Solution</h2>
-        <p className={styles.text}>{solution.solution}</p>
-        <h2 className={styles.title}>Benefits</h2>
-        <div>
-          {solution.benefits.map((benefit) =>
-            <p className={styles.p}>{benefit}</p>
-          )}
-        </div>
-        <div className={styles.button}>
-        <Link className={styles.back} to={ROUTES.homepage}>Back</Link>
-        </div>
+      <div className={styles.solutionsOverlay}>
+        <h2>{solution.name}</h2>
+        <h3>Solution</h3>
+        <p>{solution.solution}</p>
+        <h4 className={styles.firstSolution}>{solution.solutionOneName}</h4>
+        <p>{solution.solutionOneDetails}</p>
+        <h5>Benefits</h5>
+        <p>{solution.solutionOneBenefits}</p>
+        <h4>{solution.solutionTwoName}</h4>
+        <p>{solution.solutionTwoDetails}</p>
+        <h5>Benefits</h5>
+        <p>{solution.solutionTwoBenefits}</p>
+        <Link className={styles.backLink} to={ROUTES.homepage}>Back to Home</Link>
       </div>
     </section>
   );

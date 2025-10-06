@@ -80,81 +80,73 @@
   }
 }
 
-/* solutions */
-
-
-
+/* Solutions */
 .solutions {
-   background-color: black;
-   justify-content: center;
-   text-align: center;
-   background-image: url("../../assets/mars_jezero_crater.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../assets/mars_jezero_crater.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.title {
-  padding: 2%;
-  font-size: 500%;
-  text-transform: capitalize;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+.solutionsOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 350px;
 }
 
-.text {
-  line-height: 150%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 250%;
-  width: 100%;
-  padding-bottom: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
+.solutionsOverlay * {
+  margin-bottom: 30px;
 }
 
-.back {
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+.solutionsOverlay h2 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid white;
+}
 
+.solutionsOverlay h3 {
+  font-size: 30px;
+}
+
+.solutionsOverlay h4 {
+  font-size: 25px;
+}
+
+.solutionsOverlay h5 {
+  font-size: 20px;
+}
+
+.solutionsOverlay p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.firstSolution {
+  width: 75%;
+  padding-top: 15px;
+  margin: 15px auto 30px;
+  border-top: 1px solid white;
+}
+
+.backLink {
   background-color: red;
   text-decoration: none;
-  text-align: center;
-  font-size: 300%;
-  width: 175px;
+  padding: 10px;
   border-radius: 5px;
-  margin-top: 15px;
   transition:
-    transform 0.15s ease-in-out,
     color 0.15s ease-in-out,
     background-color 0.15s ease-in-out;
 }
 
-.back:active {
-  color: #DDD;
+.backLink:hover {
+  background-color: #E00;
+  color: #EEE;
+}
+
+.backLink:active {
   background-color: #D00;
-}
-
-.button {
-  width: 100%;
-  padding: 50px;
-  transition: 0.15s;
-  border-width: 2px;
-  border-color: black;
-}
-
-.button:hover {
-  transform: scale(1.025);
-}
-
-.p {
-  font-size: 300%; 
-  width: 90%;
-  margin-left: 5%;
-}
-
-.p+.p {
-  font-size: 300%;
-  border-top: 1px solid white;
-  width: 94%;
-  margin-left: 3%;
+  color: #DDD;
 }

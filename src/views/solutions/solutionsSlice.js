@@ -3,9 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const solutions = createSlice({
   name: "solutions",
   initialState: {
-    solutions: [
-      {
-        name: "residence-renovations",
+    solutions: {
+      "residence-renovations": {
+        name: "Residence Renovations",
         solution:
           "In this situation, we identified two main types of waste: aluminum waste and polymer waste (which includes EVA and polymer matrix composites).",
         solutionOneName: "Dual Use Systems",
@@ -19,8 +19,8 @@ const solutions = createSlice({
         solutionTwoBenefits:
           "Ultrasonic welding is a versatile tool that is also currently being developed. Through the partnership with Agile Ultrasonics and NASA, which began in 2022 under the Thermoplastics Development for Exploration Applications (TDEA) program, we utilize groundbreaking technologies from these sectors to recycle hard-to-recycle plastics. Through these processes, we can transform polymer waste into practical items utilized on the Red Planet.",
       },
-      {
-        name: "cosmic-celebrations",
+      "cosmic-celebrations": {
+        name: "Cosmic Celebrations",
         solution:
           "In this circumstance, we mainly focused on the decorations typically found at a birthday party. As a team, we chose to focus on two things: balloons and flowers. To make this possible, two systems are implemented.",
         solutionOneName: "Ultrasound Waves",
@@ -34,8 +34,8 @@ const solutions = createSlice({
         solutionTwoBenefits:
           "This reduces carbon dumping, which causes a destabilization of oxygen and carbon in Mars’ atmosphere. Not only does it help the Martian environment, but flowers are essential to an occasion. The light fragrance of flowers and their symbolism also trigger dopamine.",
       },
-      {
-        name: "daring-discoveries",
+      "daring-discoveries": {
+        name: "Daring Discoveries",
         solution:
           "Based on the descriptions, we also separated the waste into two categories: carbon and aluminum products.",
         solutionOneName: "Carbon Fertilizers",
@@ -49,7 +49,7 @@ const solutions = createSlice({
         solutionTwoBenefits:
           "Not only do dual-use functions significantly reduce waste, they aid in scientific discoveries, too. This saves the need for additional sifting tools to be brought along. Additionally, other machinery preservation is made possible due to filtering dust with used filters.",
       },
-    ],
+    },
   },
 });
 
