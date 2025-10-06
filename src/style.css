@@ -5,7 +5,7 @@
 }
 
 :root {
-  --card-height: 350px;
+  --card-height: 400px;
 }
 
 html {
@@ -19,6 +19,6 @@ h2 {
 
 @media only screen and (max-width: 850px) {
   :root {
-    --card-height: 250px;
+    --card-height: 300px;
   }
 }

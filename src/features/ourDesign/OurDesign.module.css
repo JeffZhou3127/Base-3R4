@@ -42,6 +42,6 @@
 @media only screen and (max-width: 850px) {
   .container {
     grid-template: repeat(3, var(--card-height)) / 1fr;
-    height: 900px;
+    height: 1025px;
   }
 }

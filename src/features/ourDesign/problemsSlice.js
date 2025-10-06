@@ -8,19 +8,19 @@ const problems = createSlice({
         num: 1,
         name: "Residence Renovations",
         description:
-          "Aluminum structures and the 3-dimensional structure used to inflate Martian habitats are difficult to recycle and reuse in their current form without melting, which is unfeasible on Mars because of its lack of oxygen.",
+          "After landing on the planet, Mars, habitats need to be inflated. To do that, 3-dimensional structures are used to support the habitat while inflating. After inflating the habitat is complete, the 3D structure and packaging materials used to ship the structure are no longer needed and have to be reused.",
       },
       {
         num: 2,
         name: "Cosmic Celebrations",
         description:
-          "Plastics like Ethylene-Vinyl Acetate (EVA) waste and Polymer Matrix Composites are difficult to break up and recycle because of their robust and reinforced molecular crosslinked systems.",
+          "A crew is commemorating a crewmate’s birthday. However, supplies for the occasion are not available and have to be created from existing waste. To make this party an occasion, it is required to reuse or recycle waste products.",
       },
       {
         num: 3,
         name: "Daring Discoveries",
         description:
-          "Pure carbon from oxygen separation projects may not seem to amount to anything useful. We don’t have the capability to transport such advanced technology to space to produce graphite from carbon.",
+          "After experimenting with oxygen-extracting machines, the leftover carbon and machinery parts are subject to reuse. The leftover carbon and parts like mesh and filters need to be either recycled or reused.",
       },
     ],
   },

@@ -6,6 +6,8 @@ import styles from "./AppLayout.module.css";
 const AppLayout = () => {
   const navigate = useNavigate();
 
+  window.scroll(0, 0);
+
   const handleClick = () => {
     navigate(ROUTES.homepage);
   };
